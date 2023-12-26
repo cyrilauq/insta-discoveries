@@ -4,7 +4,7 @@ Project from here: https://github.com/Dinil-Thilakarathne/awwwards-projects/tree
 # What I did or will do?
 Just anotate the code,try to understand it and update it to make something else
 
-# Projet use
+# The project use
 - Vite ==> used for the dev server and to build projet 
 - Split-Type ==> used to splits plain text into individuals lines, words and character
 - Sass ==> used for the styling

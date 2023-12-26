@@ -26,6 +26,7 @@ body{
     // padding-inline: 2rem;
     background-color: #000;
 
+    // Every elements with '.wrapper' et '.hero' class will have the following style
     & .hero{
         height: 100%;
         width: 100%;
@@ -34,12 +35,12 @@ body{
         justify-content: flex-start;
         background-color: #eee;
 
-        
         @media (min-width:1440px) {
             padding-inline: calc((100vw - 1440px) / 2);
         }
 
-
+        // Every elements with '.hero-content' class will have the following style
+        // '&' will concat the parent element with the one that follows the '&'
         &-content{
             width: 100%;
             display: flex;
