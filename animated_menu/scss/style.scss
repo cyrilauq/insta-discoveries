@@ -1,9 +1,10 @@
-*{
+// Give a certain style to every element of the page
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+body {
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -15,7 +16,7 @@ body{
     overflow: hidden;
 }
 
-.wrapper{
+.wrapper {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -27,14 +28,17 @@ body{
     background-color: #000;
 
     // Every elements with '.wrapper' et '.hero' class will have the following style
+    // Everything inside this will be apply on the '.wrapper .hero' element or on their children.
     & .hero{
         height: 100%;
         width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         background-color: #eee;
 
+        // Set a media query for the '.wrapper .hero' elements.
         @media (min-width:1440px) {
             padding-inline: calc((100vw - 1440px) / 2);
         }
@@ -45,14 +49,15 @@ body{
             width: 100%;
             display: flex;
             justify-content: center;
+            text-align: center;
 
-            & .mask{
+            & .mask {
                 overflow: hidden;
                 
-                    & h1{
-                        font-size: clamp(3.5rem, 6.5vw, 10rem);
-                        display: block;
-                    }
+                & h1 {
+                    font-size: clamp(3.5rem, 6.5vw, 10rem);
+                    display: block;
+                }
             }
         }
     }
@@ -103,9 +108,9 @@ body{
 
         }
 
-        &:hover{
+        &:hover {
             .menu-icon__line-left,
-            .menu-icon__line-right{
+            .menu-icon__line-right {
                 width: 30px;
 
             }
@@ -136,14 +141,14 @@ body{
                 padding: 0 1.5rem;
                 overflow: hidden;
                 
-                & .mask{
+                & .mask {
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
 
                 }
 
-                & svg{
+                & svg {
                     transform: translateY(8px);
                     transform-origin: bottom;
                 }

@@ -10,7 +10,7 @@ const menuLinks = document.querySelectorAll('.menu-link')
 const menuItems = new gsap.utils.toArray('.menu .mask')
 const menuItemsIcons = new gsap.utils.toArray('.arrow-svg')
 
-const heroText = new SplitType('.hero h1', { types: 'chars' })
+const heroText = new SplitType('.hero', { types: 'chars' })
 
 // Create a timeline and give it default values
 // With that, every animations that is on this timeline will inherits the default values
