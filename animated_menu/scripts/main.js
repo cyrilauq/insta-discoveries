@@ -17,7 +17,7 @@ const heroText = new SplitType('.hero', { types: 'chars' })
 const tl = gsap.timeline({
     defaults: {
         ease: 'power4.inOut',
-        duration: 1.5
+        duration: 1.5 // set the duration of the animation to 1.5 seconds
     }
 });
 
@@ -68,7 +68,7 @@ tl
         yPercent: 0,
         stagger: .1
     }, "-=1")
-tl.pause()
+tl.pause() // pause the animation
 
 let menuOpen = false
 
@@ -87,7 +87,7 @@ menuIcon.addEventListener('click', () => {
     }
 })
 
-
+// Apply the next instruction to every items inside the 'menuLinks'
 menuLinks.forEach(link => {
     let linkIcon = link.querySelector('.arrow-svg')
     let linkText = link.querySelector('a')
