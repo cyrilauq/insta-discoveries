@@ -4,4 +4,78 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+form {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input+label {
+    transform: translateY(-3.6rem);
+}
+
+input:focus+label {
+    transition: .7s;
+    transform: translateY(-3rem) translateX(.5rem);
+}
+
+fieldset input {
+    padding-inline: 5px;
+    background-color: rgba(255, 255, 255, .5);
+    border: 1px solid white;
+}
+
+fieldset input, button {
+    border-radius: 20px;
+    min-width: 300px;
+    height: 2rem;
+}
+
+h1 {
+    background-color: rgba(255, 255, 255, .8);
+    position: absolute;
+    top: -2rem;
+    padding: 2rem;
+    padding-bottom: 1.5rem;
+    color: black;
+    border-radius: 0 0 20px 20px;
+}
+
+main {
+    /* background-color: rgba(64, 122, 199, 0.3); */
+    backdrop-filter: blur(10px);
+    border-block: 1px solid white;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 50%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
 }
