@@ -91,6 +91,19 @@ form+p {
     margin: 0;
 }
 
+#other_pwd {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.8rem;
+    position: absolute;
+    cursor: pointer;
+    margin-inline-start: 250px;
+}
+
+#pwd_security {
+    color: red;
+}
+
 main {
     /* background-color: rgba(64, 122, 199, 0.3); */
     backdrop-filter: blur(10px);
