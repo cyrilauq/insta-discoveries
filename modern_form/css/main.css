@@ -27,7 +27,9 @@ fieldset {
     border: 0px;
 }
 
-form div {
+.other_actions {
+    margin-top: 5px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,15 +37,23 @@ form div {
 }
 
 input+label {
-    transform: translateY(-3.6rem);
+    transition: .3s linear;
+    position: absolute;
+    border-radius: 10px;
 }
 
 input:focus+label {
-    transition: .7s;
-    transform: translateY(-3rem) translateX(.5rem);
+    color: rgb(56, 54, 54);
+    transition: .3s linear;
+    background-color: rgba(240, 248, 255);
+    transform: translateY(.5rem) translateX(.5rem);
+    width: fit-content;
+    padding-inline: 15px;
+    padding-block: 5px;
 }
 
 fieldset input {
+    margin-top: 1.5rem;
     padding-inline: 5px;
     background-color: rgba(255, 255, 255, .5);
     border: 1px solid white;
