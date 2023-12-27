@@ -1,7 +1,11 @@
 .picker {
     display: flex;
+    background-color: rgb(74, 97, 113, .5);
     flex-direction: column;
     width: 50%;
+    padding: 3rem;
+    border-radius: 25px;
+    text-align: center;
 }
 
 .picker img, .picker > span, .picker button {
@@ -14,6 +18,7 @@ img {
 }
 
 body {
+    background-color: #c0c4c3;
     height: 100vh;
 }
 
@@ -23,7 +28,7 @@ body, main {
     align-items: center;
     justify-content: center;
 }
-header {
-    position: absolute;
-    top: 0;
+
+.picker h1 {
+    margin: 0;
 }
